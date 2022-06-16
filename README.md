@@ -63,7 +63,32 @@ Ans-
             })("I am a student");
             
           O/p-I Am A Student
+C) Sum of all numbers in an array
+Ans-
 
+//Anynomous function
+var s=0;
+var sum=function(arr){
+    for(var i=0;i<arr.length;i++)
+    {
+        s+=arr[i] ;      
+    }
+    return s;
+}
+console.log(sum([1,2,3,6]));
+
+
+//IIFE function
+var s=0;
+(function sum(arr){
+    for(var i=0;i<arr.length;i++)
+    {
+        s+=arr[i] ;      
+    }
+    console.log(s);
+})([1,2,3,6]);
+
+o/p-12
 
 Q3.Do the below programs in arrow functions
 
@@ -98,3 +123,17 @@ var titleCase=(str)=> {
   return str.join(' ');
 }
 console.log(titleCase("I am a student"));
+
+C) Sum of all numbers in an array
+Ans-
+
+//Arrow function
+var s=0;
+var sum=(arr)=>{
+    for(var i=0;i<arr.length;i++)
+    {
+        s+=arr[i] ;      
+    }
+    return s;
+}
+console.log(sum([1,2,3,6]));
