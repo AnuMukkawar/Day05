@@ -37,3 +37,29 @@ Ans-
             console.log(res);
         })(arr);
          
+O/p-[1,5,7,3,9,11,17]
+
+B) Convert all the strings to title caps in a string array
+
+Ans-
+
+            //Anonymous function
+            var titleCase= function(str) {
+              str = str.toLowerCase().split(' ');
+              for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+              }
+              return str.join(' ');
+            }
+            console.log(titleCase("I am a student"));
+
+            //IIFE function
+             (function titleCase(str) {
+              str = str.toLowerCase().split(' ');
+              for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+              }
+              console.log(str.join(' '));
+            })("I am a student");
+            
+          O/p-I Am A Student
