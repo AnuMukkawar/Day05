@@ -127,13 +127,14 @@ console.log(titleCase("I am a student"));
 C) Sum of all numbers in an array
 Ans-
 
-//Arrow function
-var s=0;
-var sum=(arr)=>{
-    for(var i=0;i<arr.length;i++)
-    {
-        s+=arr[i] ;      
-    }
-    return s;
-}
-console.log(sum([1,2,3,6]));
+      //Arrow function
+      var s=0;
+      var sum=(arr)=>{
+          for(var i=0;i<arr.length;i++)
+          {
+              s+=arr[i] ;      
+          }
+          return s;
+      }
+      console.log(sum([1,2,3,6]));
+ o/p-12
