@@ -63,3 +63,38 @@ Ans-
             })("I am a student");
             
           O/p-I Am A Student
+
+
+Q3.Do the below programs in arrow functions
+
+A) Print odd numbers in an array
+Ans-
+
+      var res=[];
+      //Arrow function
+      var odd=(arr)=>{
+         for(var i=0;i<arr.length;i++)
+            {
+                if(arr[i]%2!=0)
+                {
+                    res.push(arr[i]);
+                }
+            }
+            return res;
+        }
+        console.log(odd([1,3,7,6]));
+        
+O/p-[1,3,7]
+
+B) Convert all the strings to title caps in a string array
+Ans-
+
+//Arrow function
+var titleCase=(str)=> {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  return str.join(' ');
+}
+console.log(titleCase("I am a student"));
