@@ -142,6 +142,55 @@ Ans-
             })([17,3,7,4,2,19]);
 o/p- [17,3,7,2,19]
 
+E) Return all the palindromes in an array
+
+Ans-
+
+//Anonymous function 
+ var arr=[];
+        var isPalindrome=function (elements){
+                for(var i in elements)
+                {
+                  var arrayValues = elements[i].toString().split('');
+
+                    // reverse the array values
+                    var reverseArrayValues = arrayValues.reverse();
+
+                    // convert array to string
+                    var reverseString = reverseArrayValues.join('');
+
+                    if(elements[i] == reverseString) {
+                        arr.push(elements[i]);
+                    }
+
+                }
+              return arr;
+            }
+            
+    console.log( isPalindrome([151,"madam",1221,1431,"hiii"]));
+ 
+ //IIFE function           
+ var arr=[];
+            (function  isPalindrome(elements){
+                for(var i in elements)
+                {
+                  var arrayValues = elements[i].toString().split('');
+
+                    // reverse the array values
+                    var reverseArrayValues = arrayValues.reverse();
+
+                    // convert array to string
+                    var reverseString = reverseArrayValues.join('');
+
+                    if(elements[i] == reverseString) {
+                        arr.push(elements[i]);
+                    }
+
+                }
+               console.log(arr);
+            })([151,"madam",1221,1431,"hiii"]);
+            
+  o/p-[ 151, 'madam', 1221 ]
 Q3.Do the below programs in arrow functions
 
 A) Print odd numbers in an array
