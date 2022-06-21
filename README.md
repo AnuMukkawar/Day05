@@ -215,11 +215,12 @@ Ans-
             var arr3=[...arr1,...arr2];
             arr3.sort(function(a, b){return a-b});
 
-            var res= function(arr3){
-                return ((arr3[arr3.length/2-1]+arr3[arr3.length/2])/2);
-            }
-
-            console.log(res(arr3));
+            (function(arr3){
+                console.log((arr3[arr3.length/2-1]+arr3[arr3.length/2])/2);
+            })(arr3);
+            
+  o/p-16
+   
 Q3.Do the below programs in arrow functions
 
 A) Print odd numbers in an array
