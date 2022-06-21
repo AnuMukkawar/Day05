@@ -191,6 +191,35 @@ Ans-
             })([151,"madam",1221,1431,"hiii"]);
             
   o/p-[ 151, 'madam', 1221 ]
+  
+F) Return median of two sorted arrays of the same size
+
+Ans-
+
+//Anonymous function
+            var arr1=[1, 12, 15, 26, 38];
+            var arr2=[2, 13, 17, 30, 45];
+            var arr3=[...arr1,...arr2];
+            arr3.sort(function(a, b){return a-b});
+
+            var res= function(arr3){
+                return ((arr3[arr3.length/2-1]+arr3[arr3.length/2])/2);
+            }
+
+            console.log(res(arr3));
+            
+  
+//IIFE function
+            var arr1=[1, 12, 15, 26, 38];
+            var arr2=[2, 13, 17, 30, 45];
+            var arr3=[...arr1,...arr2];
+            arr3.sort(function(a, b){return a-b});
+
+            var res= function(arr3){
+                return ((arr3[arr3.length/2-1]+arr3[arr3.length/2])/2);
+            }
+
+            console.log(res(arr3));
 Q3.Do the below programs in arrow functions
 
 A) Print odd numbers in an array
