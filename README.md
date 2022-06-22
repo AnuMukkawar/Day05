@@ -6,10 +6,11 @@ A) Print odd numbers in an array
 
 Ans-
 
+//Anonymous function
+
+
       var arr=[1,5,4,6,7,3,9,11,17,24];
       var res=[];
-    
-       //Anonymous function
        var odd=function(arr){
          for(var i=0;i<arr.length;i++)
             {
@@ -21,11 +22,12 @@ Ans-
             return res;
         }
         console.log(odd(arr));
-    
+ 
+ 
+//IIFE function
     
       var arr=[1,5,4,6,7,3,9,11,17,24];
       var res=[];
-      //IIFE function
       (function(arr){
             for(var i=0;i<arr.length;i++)
             {
@@ -38,6 +40,7 @@ Ans-
         })(arr);
          
 O/p-[1,5,7,3,9,11,17]
+
 
 B) Convert all the strings to title caps in a string array
 
@@ -62,31 +65,35 @@ Ans-
               console.log(str.join(' '));
             })("I am a student");
             
-          O/p-I Am A Student
+   O/p-I Am A Student
+          
+          
 C) Sum of all numbers in an array
+
 Ans-
 
-      //Anynomous function
-      var s=0;
-      var sum=function(arr){
-          for(var i=0;i<arr.length;i++)
-          {
-              s+=arr[i] ;      
-          }
-          return s;
-      }
-      console.log(sum([1,2,3,6]));
+  //Anynomous function
+  
+            var s=0;
+            var sum=function(arr){
+                for(var i=0;i<arr.length;i++)
+                {
+                    s+=arr[i] ;      
+                }
+                return s;
+            }
+            console.log(sum([1,2,3,6]));
 
 
-      //IIFE function
-      var s=0;
-      (function sum(arr){
-          for(var i=0;i<arr.length;i++)
-          {
-              s+=arr[i] ;      
-          }
-          console.log(s);
-      })([1,2,3,6]);
+            //IIFE function
+            var s=0;
+            (function sum(arr){
+                for(var i=0;i<arr.length;i++)
+                {
+                    s+=arr[i] ;      
+                }
+                console.log(s);
+            })([1,2,3,6]);
 
 o/p-12
 
@@ -141,6 +148,7 @@ Ans-
                 }
                 console.log(arr1);
             })([17,3,7,4,2,19]);
+            
 o/p- [17,3,7,2,19]
 
 E) Return all the palindromes in an array
@@ -148,6 +156,7 @@ E) Return all the palindromes in an array
 Ans-
 
 //Anonymous function 
+
 
              var arr=[];
              var isPalindrome=function (elements){
@@ -169,9 +178,11 @@ Ans-
               return arr;
             }
             
-    console.log( isPalindrome([151,"madam",1221,1431,"hiii"]));
+       console.log( isPalindrome([151,"madam",1221,1431,"hiii"]));
  
- //IIFE function           
+ //IIFE function   
+ 
+ 
              var arr=[];
             (function  isPalindrome(elements){
                 for(var i in elements)
