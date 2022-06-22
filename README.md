@@ -95,6 +95,7 @@ D)Return all the prime numbers in an array
 Ans-
 
 //Anynomous function
+
             var arr=[17,3,7,4,2,19];
             var arr1=[];
             var isPrime=function(arr) {
@@ -147,8 +148,9 @@ E) Return all the palindromes in an array
 Ans-
 
 //Anonymous function 
-            var arr=[];
-        var isPalindrome=function (elements){
+
+             var arr=[];
+             var isPalindrome=function (elements){
                 for(var i in elements)
                 {
                   var arrayValues = elements[i].toString().split('');
