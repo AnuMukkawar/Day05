@@ -225,7 +225,7 @@ Ans-
             
   o/p-16
    
-G)
+G) Remove duplicates from Array
 
 Ans-
 
@@ -278,7 +278,61 @@ Ans-
             })(arr);
             
  o/p- [ 1, 2, 3, 4, 5, 6, 7, 8 ]
- 
+
+H) Rotate an array by K times
+
+Ans-
+
+//Anonymous function
+
+            let Array = [1, 2, 3, 4, 5];
+            let N = Array.length;
+            let K = 2;
+            let arr1=[];
+
+            var RightRotate=function(a, n, k)
+            {
+                k = k % n;
+
+                for (let i = 0; i < n; i++) {
+                    if (i < k) {
+                        arr1.push(a[n + i - k]);
+                    }
+                    else {
+                        arr1.push((a[i - k]));
+                    }
+                }
+               return arr1;
+            }
+
+            console.log(RightRotate(Array, N, K));
+
+
+//IIFE function
+
+            let Array = [1, 2, 3, 4, 5];
+            let N = Array.length;
+            let K = 2;
+            let arr1=[];
+
+            (function RightRotate(a, n, k)
+            {
+                k = k % n;
+
+                for (let i = 0; i < n; i++) {
+                    if (i < k) {
+                        arr1.push(a[n + i - k]);
+                    }
+                    else {
+                        arr1.push((a[i - k]));
+                    }
+                }
+                console.log(arr1);
+            })(Array, N, K);
+            
+            
+  o/p- [4,5,1,2,3]
+            
             
 Q3.Do the below programs in arrow functions
 
