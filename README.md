@@ -66,27 +66,27 @@ Ans-
 C) Sum of all numbers in an array
 Ans-
 
-//Anynomous function
-var s=0;
-var sum=function(arr){
-    for(var i=0;i<arr.length;i++)
-    {
-        s+=arr[i] ;      
-    }
-    return s;
-}
-console.log(sum([1,2,3,6]));
+      //Anynomous function
+      var s=0;
+      var sum=function(arr){
+          for(var i=0;i<arr.length;i++)
+          {
+              s+=arr[i] ;      
+          }
+          return s;
+      }
+      console.log(sum([1,2,3,6]));
 
 
-//IIFE function
-var s=0;
-(function sum(arr){
-    for(var i=0;i<arr.length;i++)
-    {
-        s+=arr[i] ;      
-    }
-    console.log(s);
-})([1,2,3,6]);
+      //IIFE function
+      var s=0;
+      (function sum(arr){
+          for(var i=0;i<arr.length;i++)
+          {
+              s+=arr[i] ;      
+          }
+          console.log(s);
+      })([1,2,3,6]);
 
 o/p-12
 
@@ -197,6 +197,7 @@ F) Return median of two sorted arrays of the same size
 Ans-
 
 //Anonymous function
+
             var arr1=[1, 12, 15, 26, 38];
             var arr2=[2, 13, 17, 30, 45];
             var arr3=[...arr1,...arr2];
@@ -210,6 +211,7 @@ Ans-
             
   
 //IIFE function
+
             var arr1=[1, 12, 15, 26, 38];
             var arr2=[2, 13, 17, 30, 45];
             var arr3=[...arr1,...arr2];
