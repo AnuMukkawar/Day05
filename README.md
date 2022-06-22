@@ -250,6 +250,7 @@ B) Convert all the strings to title caps in a string array
 Ans-
 
 //Arrow function
+
             var titleCase=(str)=> {
               str = str.toLowerCase().split(' ');
               for (var i = 0; i < str.length; i++) {
