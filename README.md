@@ -225,6 +225,61 @@ Ans-
             
   o/p-16
    
+G)
+
+Ans-
+
+//Anonymous function
+
+            var arr=[1,1,2,3,4,4,5,6,5,3,7,8];
+            var arr1=[];
+            arr=arr.sort();
+            var removeDuplicate=function(arr){
+              for(var i=0;i<arr.length;i++)
+              {
+                for(var j=i+1;j<arr.length;j++)
+                {
+                  if(arr[i]!=arr[j])
+                  {
+                     arr1.push(arr[i]);  
+                     break;
+                  }
+                  else 
+                    break;
+                }
+              }
+              arr1.push(arr[arr.length-1]);
+              return arr1;
+            }
+
+            console.log(removeDuplicate(arr));
+       
+//IIFE function
+
+            var arr=[1,1,2,3,4,4,5,6,5,3,7,8];
+            var arr1=[];
+            arr=arr.sort();
+            (function  removeDuplicate(arr){
+              for(var i=0;i<arr.length;i++)
+              {
+                for(var j=i+1;j<arr.length;j++)
+                {
+                  if(arr[i]!=arr[j])
+                  {
+                     arr1.push(arr[i]);  
+                     break;
+                  }
+                  else 
+                    break;
+                }
+              }
+              arr1.push(arr[arr.length-1]);
+              console.log(arr1);
+            })(arr);
+            
+ o/p- [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+ 
+            
 Q3.Do the below programs in arrow functions
 
 A) Print odd numbers in an array
